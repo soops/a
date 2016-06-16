@@ -1,7 +1,8 @@
+<title>a</title>
 <script>
-	aA = 1;
+	aA = 0.0001;
 	aa = "";
-	Aa = ["a", "A", "&nbsp;", "&nbsp;", "&nbsp;"]
+	Aa = ["a", "A", "&nbsp;", "&nbsp;"]
 	window.setInterval(function() {
 		aa += Aa[Math.floor(Math.random() * Aa.length)];
 		document.getElementById("a").innerHTML = aa;
@@ -10,15 +11,18 @@
 <style>
 	body {
 		width: 100%;
+		overflow-x: hidden;
 	}
-	p {
+	pre {
 		word-wrap: normal;
 		word-break: break-all;
 		font-family: monospace;
+		width: 100%;
+		white-space: pre-wrap;
 	}
 </style>
 
 <body>
-	<p id="a"></p>
+	<pre id="a"></pre>
 
 </body>
