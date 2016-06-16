@@ -1,7 +1,7 @@
 <script>
-	aA = 10;
+	aA = 1;
 	aa = "";
-	Aa = ["a", "A"]
+	Aa = ["a", "A", "&nbsp;", "&nbsp;", "&nbsp;"]
 	window.setInterval(function() {
 		aa += Aa[Math.floor(Math.random() * Aa.length)];
 		document.getElementById("a").innerHTML = aa;
@@ -14,6 +14,7 @@
 	p {
 		word-wrap: normal;
 		word-break: break-all;
+		font-family: monospace;
 	}
 </style>
 
